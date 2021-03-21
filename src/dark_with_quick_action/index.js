@@ -15,15 +15,15 @@ const Component = (props) => (
               src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
               alt="Workflow"
             />
-            {/*             <img
-              css={tw`hidden lg:block h-8 w-auto"
+            <img
+              css={tw`hidden lg:block h-8 w-auto`}
               src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
               alt="Workflow"
-            /> */}
+            />
           </div>
 
           {/* Normal menu */}
-          <div css={tw`hidden md:ml-6 md:flex md:items-center md:space-x-4`}>
+          <div css={tw`hidden md:flex md:ml-6 md:items-center md:space-x-4`}>
             {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
             <a
               href="/"
@@ -80,6 +80,7 @@ const Component = (props) => (
             css={tw`hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center`}
           >
             <button
+              type="button"
               css={tw`bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white`}
             >
@@ -132,14 +133,14 @@ const Component = (props) => (
               <div
                 data-todo-x-description="Dropdown menu, show/hide based on menu state."
                 data-todo-x-show="open"
-                data-todo-x-transition-enter="transition ease-out duration-200"
-                data-todo-x-transition-enter-start="transform opacity-0 scale-95"
-                data-todo-x-transition-enter-end="transform opacity-100 scale-100"
-                data-todo-x-transition-leave="transition ease-in duration-75"
-                data-todo-x-transition-leave-start="transform opacity-100 scale-100"
-                data-todo-x-transition-leave-end="transform opacity-0 scale-95"
-                css={tw`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1
-                  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}
+                data-todo-x-transition-enter={tw`transition ease-out duration-200`}
+                data-todo-x-transition-enter-start={tw`transform opacity-0 scale-95`}
+                data-todo-x-transition-enter-end={tw`transform opacity-100 scale-100`}
+                data-todo-x-transition-leave={tw`transition ease-in duration-75`}
+                data-todo-x-transition-leave-start={tw`transform opacity-100 scale-100`}
+                data-todo-x-transition-leave-end={tw`transform opacity-0 scale-95`}
+                css={tw`origin-top-right absolute ring-1 right-0 mt-2 w-48 rounded-md shadow-lg py-1
+                  bg-white ring-black ring-opacity-5 focus:outline-none`}
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"
