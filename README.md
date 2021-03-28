@@ -1,4 +1,4 @@
-## React Periodic Table
+## React Emotion Tailwind Implementation
 
 <!--
 <img src="Logotype primary.png" width="60%" height="60%" />
