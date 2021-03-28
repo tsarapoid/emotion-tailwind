@@ -8,7 +8,7 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 
 ## Demo
 
-[tsarapoid.github.io/react-periodic-table](https://tsarapoid.github.io/emotion-tailwind/)
+[tsarapoid.github.io/emotion-tailwind](https://tsarapoid.github.io/emotion-tailwind/)
 
 ## Install
 
