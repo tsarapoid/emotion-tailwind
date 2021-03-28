@@ -76,13 +76,13 @@ const Component = (props) => (
               <span>New Job</span>
             </button>
           </div>
+
           <div
             css={tw`hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center`}
           >
             <button
               type="button"
-              css={tw`bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white
-                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white`}
+              css={tw`bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white`}
             >
               <span css={tw`sr-only`}>View notifications</span>
               <svg
@@ -113,7 +113,7 @@ const Component = (props) => (
               <div>
                 <button
                   type="button"
-                  css={tw`bg-gray-800 flex text-sm rounded-full
+                  css={tw`bg-gray-800 p-1 flex text-sm rounded-full
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white`}
                   id="user-menu"
                   aria-expanded="false"
@@ -123,7 +123,7 @@ const Component = (props) => (
                 >
                   <span css={tw`sr-only`}>Open user menu</span>
                   <img
-                    css={tw`h-8 w-8 rounded-full`}
+                    css={tw`h-7 w-7 rounded-full`}
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
